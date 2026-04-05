@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 文字コードとビューポート設定 -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEOメタタグ -->
+  <title>マッチングアプリのプロフィール書き方【例文あり】20代・フリーター向け完全ガイド｜恋はじめ</title>
+  <meta name="description" content="マッチングアプリのプロフィールの書き方を例文つきで解説。自己紹介文・職業・趣味の書き方、フリーター・転職中でも好印象を与えるポイントを20代向けにわかりやすく紹介します。">
+
+  <!-- Google Fonts：Noto Sans JP 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 共通スタイルシート -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- 記事ページ固有スタイル -->
+  <style>
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+    .breadcrumb {
+      font-size: 12px;
+      color: var(--color-text-light);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--color-text-light); }
+    .breadcrumb a:hover { color: var(--color-main); }
+    .breadcrumb span { margin: 0 6px; }
+    .article-header { margin-bottom: 32px; }
+    .article-category {
+      display: inline-block;
+      background-color: var(--color-sub);
+      color: var(--color-main);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .article-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+    }
+    .intro {
+      background-color: var(--color-sub);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      margin-bottom: 40px;
+    }
+    .intro h1 { display: none; }
+    .intro > p:first-of-type {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-main);
+      margin-bottom: 8px;
+    }
+    .intro ul {
+      list-style: disc;
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    .intro ul li {
+      font-size: 14px;
+      line-height: 1.9;
+      color: var(--color-text);
+      margin-bottom: 4px;
+    }
+    .intro > p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 12px;
+    }
+    .cross-link {
+      font-size: 13px;
+      color: #888;
+      border-top: 1px solid var(--color-border);
+      padding-top: 12px;
+      margin-top: 16px !important;
+      margin-bottom: 0 !important;
+    }
+    .cross-link a { color: var(--color-main); font-weight: 700; }
+    .content-section { margin-bottom: 48px; }
+    .content-section h2 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-text);
+      border-left: 4px solid var(--color-main);
+      padding-left: 12px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+    .content-section h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-top: 24px;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px dashed var(--color-border);
+    }
+    .content-section p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+    .content-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    .content-section ul li {
+      font-size: 15px;
+      line-height: 1.8;
+      padding: 10px 12px 10px 36px;
+      position: relative;
+      border-bottom: 1px solid var(--color-border);
+    }
+    .content-section ul li:first-child { border-top: 1px solid var(--color-border); }
+    .content-section ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 12px;
+      color: var(--color-main);
+      font-weight: 700;
+    }
+
+    /* 例文ボックス */
+    .example-box {
+      background-color: #fff9fb;
+      border: 1px solid #ffd6e7;
+      border-radius: var(--radius-md);
+      padding: 20px 20px 16px;
+      margin: 16px 0 24px;
+    }
+    .example-box p.example-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-main);
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    .example-box p {
+      font-size: 14px;
+      line-height: 1.9;
+      color: var(--color-text);
+      margin-bottom: 0;
+    }
+
+    /* NGボックス */
+    .ng-box {
+      background-color: #fff5f5;
+      border-left: 4px solid #f87171;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 16px 0 20px;
+    }
+    .ng-box p.ng-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #f87171;
+      margin-bottom: 8px;
+    }
+    .ng-box p {
+      font-size: 14px;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    .summary {
+      background-color: var(--color-sub);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+    }
+    .summary h2 { border-left-color: var(--color-accent); }
+    .summary ul li { border-color: #f3d0d0; }
+
+    .cta {
+      background: linear-gradient(135deg, #ffeaea 0%, #ffd6e7 50%, #ffe0f0 100%);
+      border-radius: var(--radius-md);
+      padding: 32px 20px;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .cta h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--color-main);
+      margin-bottom: 12px;
+    }
+    .cta p {
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+    .cta ul {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .cta ul li::before { display: none; }
+    .cta ul li { border: none; padding: 0; width: 100%; max-width: 340px; }
+    .cta-button {
+      display: block;
+      background-color: var(--color-main);
+      color: var(--color-white) !important;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: var(--radius-lg);
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 16px rgba(248, 113, 113, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(248, 113, 113, 0.45);
+      opacity: 1;
+    }
+    .cta-button-main {
+      display: inline-block;
+      background-color: var(--color-main);
+      color: var(--color-white) !important;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: var(--radius-lg);
+      letter-spacing: 0.05em;
+      box-shadow: 0 4px 16px rgba(248, 113, 113, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta-button-main:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(248, 113, 113, 0.45);
+      opacity: 1;
+    }
+
+    @media (min-width: 768px) {
+      .article-container { padding: 40px 32px 80px; }
+      .article-title { font-size: 30px; }
+      .content-section h2 { font-size: 22px; }
+      .cta ul {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .cta ul li { width: auto; min-width: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-name">
+        <a href="../index.html">恋はじめ</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== メインコンテンツ ===== -->
+  <main>
+    <div class="article-container">
+
+      <!-- パンくずリスト -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">トップ</a>
+        <span>›</span>
+        <span>マッチングアプリのプロフィール書き方【例文あり】</span>
+      </nav>
+
+      <!-- 記事ヘッダー -->
+      <header class="article-header">
+        <span class="article-category">使い方ガイド</span>
+        <h1 class="article-title">マッチングアプリのプロフィール書き方【例文あり】20代・フリーター向け完全ガイド</h1>
+      </header>
+
+      <!-- 記事本文 -->
+      <article>
+
+        <!-- 冒頭 -->
+        <section class="intro">
+          <h1>マッチングアプリのプロフィール書き方【例文あり】20代・フリーター向け完全ガイド</h1>
+          <p>この記事でわかること：</p>
+          <ul>
+            <li>マッチング率が上がるプロフィールの基本構成</li>
+            <li>自己紹介文の書き方と例文（フリーター・社会人1年目向け）</li>
+            <li>職業欄・趣味欄の書き方のコツ</li>
+            <li>フリーター・転職中でも好印象を与える書き方</li>
+            <li>絶対にやってはいけないNG表現</li>
+          </ul>
+          <p>「プロフィールを何を書けばいいかわからない」「フリーターだと不利？」と感じていませんか？</p>
+          <p>マッチングアプリはプロフィールが命です。どんなに良い写真でも、自己紹介文が薄いとマッチング率は下がります。この記事では、20代・フリーターの方でも自信を持ってプロフィールを作れるよう、具体的な例文とともに解説します。</p>
+          <p class="cross-link">※転職・就職で「会社員」プロフィールを目指したい方はこちら → <a href="https://challenge-tensyoku.github.io/challenge-tensyoku/" rel="noopener" target="_blank">チャレンジ転職</a></p>
+        </section>
+
+        <!-- セクション1：基本構成 -->
+        <section class="content-section">
+          <h2>マッチングアプリのプロフィール基本構成</h2>
+          <p>プロフィールは大きく「写真」「基本情報」「自己紹介文」の3つで構成されます。まずはそれぞれの重要度を理解しましょう。</p>
+          <ul>
+            <li><strong>写真（最重要）：</strong>第一印象の8割は写真で決まります。清潔感のある自然な笑顔の写真を1枚目にしましょう。加工しすぎず、実際の雰囲気に近い写真が安心感を与えます。</li>
+            <li><strong>基本情報（年齢・職業・居住地など）：</strong>正直に記入することが基本です。後で違うとわかると信頼を失います。職業はあとで詳しく解説します。</li>
+            <li><strong>自己紹介文（差別化のカギ）：</strong>写真が同じくらいの候補者が並んだとき、自己紹介文が決め手になります。200〜400文字を目安に、あなたの人柄が伝わる文章を書きましょう。</li>
+          </ul>
+        </section>
+
+        <!-- セクション2：自己紹介文の書き方 -->
+        <section class="content-section">
+          <h2>自己紹介文の書き方と例文</h2>
+          <p>自己紹介文は「趣味・日常」「どんな人と会いたいか」「一言メッセージ」の3段構成で書くのが基本です。</p>
+
+          <h3>社会人1年目・正社員なりたての例文</h3>
+          <div class="example-box">
+            <p class="example-label">例文（男性・24歳・正社員1年目）</p>
+            <p>はじめまして、やまとと申します。今年から社会人になり、仕事も少し慣れてきたので、そろそろ素敵な出会いを探したいと思い登録しました。<br><br>休日は映画を観たり、近所のカフェでのんびりしたりするのが好きです。スポーツも好きで、月に2〜3回は友人とフットサルをしています。一緒にカフェ巡りや映画を楽しめる方がいたら嬉しいです。<br><br>はじめはメッセージからゆっくり仲良くなれたらと思っています。気軽にいいねしていただけると喜びます！</p>
+          </div>
+
+          <h3>フリーター・アルバイトの例文</h3>
+          <div class="example-box">
+            <p class="example-label">例文（女性・22歳・アルバイト）</p>
+            <p>はじめまして！ゆいといいます。カフェでアルバイトをしながら、好きなことを大切にして生きています。<br><br>休みの日は料理したり、友達とカラオケに行ったり、動画を見てのんびりするのが好きです。最近はヨガも始めました。<br><br>まずはお話しするところから始めたいです。共通の趣味がある方や、のんびり過ごすのが好きな方、気軽にいいねしてください😊</p>
+          </div>
+
+          <h3>転職活動中の例文</h3>
+          <div class="example-box">
+            <p class="example-label">例文（男性・25歳・転職活動中）</p>
+            <p>はじめまして。ひろとといいます。今は次のステップに向けて就職活動中ですが、それとは別に、素敵な出会いのきっかけになればと思いアプリを始めました。<br><br>音楽が好きで、ライブに行ったりギターを弾いたりしています。料理も得意で、週末はよく自炊しています。<br><br>落ち着いた雰囲気の方や、一緒においしいものを食べに行ける方と仲良くなりたいです。気軽にメッセージしてください！</p>
+          </div>
+
+          <p>転職中であることは隠さず書いても大丈夫です。「前向きに動いている」という印象を与える書き方にすることが大切です。</p>
+        </section>
+
+        <!-- セクション3：職業欄 -->
+        <section class="content-section">
+          <h2>職業欄の書き方：フリーター・転職中でも好印象を与えるコツ</h2>
+          <p>職業欄は正直に書くのが基本ですが、書き方次第で印象が大きく変わります。</p>
+
+          <h3>フリーター・アルバイトの場合</h3>
+          <p>「フリーター」ではなく、働いている業種・業態を書きましょう。「飲食業」「サービス業」「販売・接客」などと書くと、相手に伝わりやすくなります。アプリによっては「フリーター」という選択肢がないこともあります。</p>
+          <ul>
+            <li><strong>OK例：</strong>飲食業（アルバイト）、サービス業、フリーランス</li>
+            <li><strong>避けたい表現：</strong>無職、ニート、特になし（相手に不安感を与えます）</li>
+          </ul>
+
+          <h3>転職活動中・就活中の場合</h3>
+          <p>「求職中」「転職活動中」と書くか、前職の業種を書くかのどちらかです。自己紹介文で「前向きに活動中」と一言添えるだけで、ネガティブな印象をカバーできます。</p>
+
+          <div class="ng-box">
+            <p class="ng-label">NGな書き方</p>
+            <p>「無職です…よかったら話しかけてください」「仕事がんばります」など、自信のなさや言い訳が透けて見える表現は避けましょう。現状より「これからどうしたいか」を前向きに書くことが大切です。</p>
+          </div>
+        </section>
+
+        <!-- CTA（記事中） -->
+        <section class="cta">
+          <h3>プロフィールができたら登録してみよう</h3>
+          <p>まずは無料で登録して、プロフィールを作るところから始めてみましょう。</p>
+          <ul>
+            <li><a href="[AFFILIATE_LINK]" class="cta-button" rel="nofollow" target="_blank">Pairs（ペアーズ）に無料登録する →</a></li>
+            <li><a href="[AFFILIATE_LINK]" class="cta-button" rel="nofollow" target="_blank">with（ウィズ）に無料登録する →</a></li>
+            <li><a href="[AFFILIATE_LINK]" class="cta-button" rel="nofollow" target="_blank">タップルに無料登録する →</a></li>
+          </ul>
+        </section>
+
+        <!-- セクション4：趣味・NG表現 -->
+        <section class="content-section">
+          <h2>趣味欄の書き方とNG表現</h2>
+
+          <h3>趣味欄は「具体的に」書く</h3>
+          <p>「映画」「音楽」「読書」だけでは他の人と差別化できません。ジャンル・最近観たもの・好きなアーティストなど、一言具体的に添えると会話のきっかけになりやすいです。</p>
+          <ul>
+            <li><strong>良い例：</strong>「映画（最近はアクション系が多め、先月シン・ゴジラを観て感動しました）」</li>
+            <li><strong>良い例：</strong>「カフェ巡り（新しいカフェを月2〜3軒開拓するのが趣味です）」</li>
+            <li><strong>良い例：</strong>「料理（週末は自炊派で、最近パスタにはまっています）」</li>
+          </ul>
+
+          <h3>プロフィールでやってはいけないNG表現</h3>
+          <div class="ng-box">
+            <p class="ng-label">NG例</p>
+            <p>・「特にない」「なんでも好き」（個性が伝わりません）<br>
+            ・「真剣な出会いを求めています（絵文字なし・重い雰囲気）」（圧迫感を感じさせます）<br>
+            ・「詐欺・業者は来ないでください」（最初からネガティブな印象を与えます）<br>
+            ・自撮り写真のみ・全身写真なし（体型や雰囲気が伝わりません）</p>
+          </div>
+        </section>
+
+        <!-- まとめ -->
+        <section class="content-section summary">
+          <h2>まとめ：プロフィールは「正直＋前向き＋具体的」が基本</h2>
+          <ul>
+            <li>写真は清潔感のある自然な笑顔を1枚目に</li>
+            <li>自己紹介文は「趣味・どんな人と会いたいか・一言」の3段構成で</li>
+            <li>職業はフリーター・転職中でも正直に書き、前向きな一言を添える</li>
+            <li>趣味は「具体的に」書いて会話のきっかけを作る</li>
+            <li>ネガティブ・言い訳に聞こえる表現は避ける</li>
+          </ul>
+          <p>プロフィールを整えるだけで、マッチング率は大きく変わります。まずは登録してプロフィールを作るところから始めてみましょう。</p>
+        </section>
+
+        <!-- CTA（記事末尾） -->
+        <section class="cta">
+          <p>まずは無料で始めてみる → <a href="[AFFILIATE_LINK]" class="cta-button-main" rel="nofollow" target="_blank">おすすめアプリを見る</a></p>
+          <p class="cross-link">転職・就職で「会社員」プロフィールを目指したい方はこちら → <a href="https://challenge-tensyoku.github.io/challenge-tensyoku/" rel="noopener" target="_blank">チャレンジ転職</a></p>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-site-name">恋はじめ</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 恋はじめ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
