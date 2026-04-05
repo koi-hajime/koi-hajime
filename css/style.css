@@ -287,18 +287,60 @@ main {
   overflow: hidden;
 }
 
-/* サムネイル画像未設定時のプレースホルダー */
+/* サムネイル画像未設定時のプレースホルダー（OGP風テキストサムネイル） */
 .card-thumb-placeholder {
   width: 100%;
   height: 100%;
   background: linear-gradient(135deg, var(--color-sub) 0%, #ffd6e7 100%);
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  padding: 20px 24px;
+  position: relative;
+  overflow: hidden;
 }
 
+/* カテゴリ別グラデーション */
+.card-thumb-placeholder--guide {
+  background: linear-gradient(135deg, #fde8e8 0%, #ffc2d4 100%);
+}
+.card-thumb-placeholder--ranking {
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+}
+.card-thumb-placeholder--freeter {
+  background: linear-gradient(135deg, #fde8f4 0%, #f9a8d4 100%);
+}
+
+/* サムネイル内カテゴリラベル */
+.thumb-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--color-main);
+  background-color: rgba(255,255,255,0.85);
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+/* サムネイル内タイトルテキスト */
+.thumb-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: #5a2a2a;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* 右下の装飾絵文字 */
 .thumb-icon {
-  font-size: 48px;
+  position: absolute;
+  bottom: 12px;
+  right: 16px;
+  font-size: 36px;
+  opacity: 0.5;
 }
 
 /* カード本文エリア */
