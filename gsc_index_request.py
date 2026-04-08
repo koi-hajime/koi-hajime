@@ -8,12 +8,16 @@ import json
 import sys
 
 URLS = [
-    "https://koi-hajime.github.io/koi-hajime/",
-    "https://koi-hajime.github.io/koi-hajime/articles/seishain-matching-timing.html",
-    "https://koi-hajime.github.io/koi-hajime/articles/matching-app-20dai-hajimete.html",
-    "https://koi-hajime.github.io/koi-hajime/articles/freeter-deai-nai-matching.html",
-    "https://koi-hajime.github.io/koi-hajime/articles/matching-app-ryokin-hikaku.html",
-    "https://koi-hajime.github.io/koi-hajime/articles/matching-profile-kakikata.html",
+    "https://koi-hajime.com/",
+    "https://koi-hajime.com/articles/seishain-matching-timing.html",
+    "https://koi-hajime.com/articles/matching-app-20dai-hajimete.html",
+    "https://koi-hajime.com/articles/freeter-deai-nai-matching.html",
+    "https://koi-hajime.com/articles/matching-app-ryokin-hikaku.html",
+    "https://koi-hajime.com/articles/matching-profile-kakikata.html",
+    "https://koi-hajime.com/articles/pairs-review.html",
+    "https://koi-hajime.com/articles/matching-app-man-20dai.html",
+    "https://koi-hajime.com/articles/freeter-kekkon-matching.html",
+    "https://koi-hajime.com/privacy.html",
 ]
 
 def get_access_token():

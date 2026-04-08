@@ -3,49 +3,49 @@
 
   <!-- トップページ -->
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/</loc>
+    <loc>https://koi-hajime.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- 記事ページ -->
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/seishain-matching-timing.html</loc>
+    <loc>https://koi-hajime.com/articles/seishain-matching-timing.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/matching-app-20dai-hajimete.html</loc>
+    <loc>https://koi-hajime.com/articles/matching-app-20dai-hajimete.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/freeter-deai-nai-matching.html</loc>
+    <loc>https://koi-hajime.com/articles/freeter-deai-nai-matching.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/matching-app-ryokin-hikaku.html</loc>
+    <loc>https://koi-hajime.com/articles/matching-app-ryokin-hikaku.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/matching-profile-kakikata.html</loc>
+    <loc>https://koi-hajime.com/articles/matching-profile-kakikata.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/pairs-review.html</loc>
+    <loc>https://koi-hajime.com/articles/pairs-review.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/matching-app-man-20dai.html</loc>
+    <loc>https://koi-hajime.com/articles/matching-app-man-20dai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://koi-hajime.github.io/koi-hajime/articles/freeter-kekkon-matching.html</loc>
+    <loc>https://koi-hajime.com/articles/freeter-kekkon-matching.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
