@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 文字コードとビューポート設定 -->
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://koi-hajime.com/articles/matching-shinanai.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEOメタタグ -->
+  <title>マッチングアプリで全然マッチングしない理由と対策【20代向け】｜恋はじめ</title>
+  <meta name="description" content="マッチングアプリでマッチングしない原因（写真・プロフィール・いいね数・アプリ選び）を徹底解説。20代向けに具体的な改善策をわかりやすく紹介します。">
+  <!-- OGPタグ -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="恋はじめ">
+  <meta property="og:title" content="マッチングアプリで全然マッチングしない理由と対策【20代向け】｜恋はじめ">
+  <meta property="og:description" content="マッチングアプリでマッチングしない原因と具体的な改善策を解説。写真・プロフィール・いいね数・アプリ選びのポイントをわかりやすく紹介。">
+  <meta property="og:url" content="https://koi-hajime.com/articles/matching-shinanai.html">
+
+  <!-- Google Fonts：Noto Sans JP 読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- 共通スタイルシート（articlesディレクトリから相対パスで参照） -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- 記事ページ固有スタイル -->
+  <style>
+    /* --------------------
+       記事ページ共通レイアウト
+    -------------------- */
+    .article-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    .breadcrumb {
+      font-size: 12px;
+      color: var(--color-text-light);
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a {
+      color: var(--color-text-light);
+    }
+
+    .breadcrumb a:hover {
+      color: var(--color-main);
+    }
+
+    .breadcrumb span {
+      margin: 0 6px;
+    }
+
+    .article-header {
+      margin-bottom: 32px;
+    }
+
+    .article-category {
+      display: inline-block;
+      background-color: var(--color-sub);
+      color: var(--color-main);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+
+    .article-title {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+    }
+
+    /* --------------------
+       記事本文スタイル
+    -------------------- */
+    .summary {
+      background-color: var(--color-sub);
+      border-radius: var(--radius-md);
+      padding: 24px 20px;
+      margin-bottom: 40px;
+    }
+
+    .summary > p:first-child {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--color-main);
+      margin-bottom: 8px;
+    }
+
+    .summary h2 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-text);
+      border-left: 4px solid var(--color-accent);
+      padding-left: 12px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .summary ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 16px;
+    }
+
+    .summary ul li {
+      font-size: 14px;
+      line-height: 1.9;
+      padding: 8px 12px 8px 36px;
+      position: relative;
+      border-bottom: 1px solid #f3d0d0;
+      color: var(--color-text);
+    }
+
+    .summary ul li:first-child {
+      border-top: 1px solid #f3d0d0;
+    }
+
+    .summary ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 12px;
+      color: var(--color-main);
+      font-weight: 700;
+    }
+
+    .summary p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 12px;
+    }
+
+    .content-section {
+      margin-bottom: 48px;
+    }
+
+    .content-section h2 {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--color-text);
+      border-left: 4px solid var(--color-main);
+      padding-left: 12px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .content-section h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-top: 24px;
+      margin-bottom: 12px;
+      padding-bottom: 4px;
+      border-bottom: 1px dashed var(--color-border);
+    }
+
+    .content-section p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    .content-section ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .content-section ul li {
+      font-size: 15px;
+      line-height: 1.8;
+      padding: 10px 12px 10px 36px;
+      position: relative;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .content-section ul li:first-child {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .content-section ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 12px;
+      color: var(--color-main);
+      font-weight: 700;
+    }
+
+    .content-section blockquote {
+      background-color: var(--color-sub);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px;
+      margin: 16px 0 20px;
+    }
+
+    .content-section blockquote p {
+      font-size: 14px;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 0;
+    }
+
+    .app-comparison {
+      overflow-x: auto;
+      margin-bottom: 20px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+    }
+
+    .app-comparison table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      min-width: 520px;
+    }
+
+    .app-comparison thead tr {
+      background-color: var(--color-main);
+    }
+
+    .app-comparison th {
+      color: var(--color-white);
+      font-weight: 700;
+      padding: 10px 12px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .app-comparison tbody tr:nth-child(even) {
+      background-color: var(--color-sub);
+    }
+
+    .app-comparison tbody tr:nth-child(odd) {
+      background-color: var(--color-white);
+    }
+
+    .app-comparison td {
+      padding: 12px;
+      line-height: 1.7;
+      vertical-align: top;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .content-section p a[rel="nofollow"] {
+      display: inline-block;
+      color: var(--color-main);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .content-section p a[rel="nofollow"]:hover {
+      opacity: 0.8;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #ffeaea 0%, #ffd6e7 50%, #ffe0f0 100%);
+      border-radius: var(--radius-md);
+      padding: 20px 20px;
+      margin: 24px 0;
+    }
+
+    .cta p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 8px;
+    }
+
+    .cta p:last-child {
+      margin-bottom: 0;
+    }
+
+    .cta p a {
+      color: var(--color-main);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    .cta p a:hover {
+      opacity: 0.8;
+    }
+
+    article > p {
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .article-container {
+        padding: 40px 32px 80px;
+      }
+
+      .article-title {
+        font-size: 30px;
+      }
+
+      .content-section h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== ヘッダー ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-name">
+        <a href="../index.html">恋はじめ</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== メインコンテンツ ===== -->
+  <main>
+    <div class="article-container">
+
+      <!-- パンくずリスト -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">トップ</a>
+        <span>›</span>
+        <span>マッチングアプリで全然マッチングしない理由と対策【20代向け】</span>
+      </nav>
+
+      <!-- 記事ヘッダー -->
+      <header class="article-header">
+        <span class="article-category">悩み解決</span>
+        <h1 class="article-title">マッチングアプリで全然マッチングしない理由と対策【20代向け】</h1>
+      </header>
+
+      <!-- 記事本文 -->
+      <article>
+
+        <!-- 冒頭：この記事でわかること -->
+        <section class="summary">
+          <p>この記事でわかること</p>
+          <ul>
+            <li>マッチングしない主な原因（写真・プロフィール・いいね数・アプリ選び）</li>
+            <li>各原因に対する具体的な改善策</li>
+            <li>20代が使いやすいおすすめアプリ（concoi・マリッシュ）</li>
+            <li>マッチング率を上げるために今すぐできること</li>
+          </ul>
+        </section>
+
+        <!-- 冒頭本文 -->
+        <p>「いいねを送っているのに全然マッチングしない」「登録してから1週間経つけど0件のまま」――そんな状況に悩んでいませんか？</p>
+        <p>実はマッチングしない原因には、いくつかはっきりしたパターンがあります。原因を正しく把握して対策を取れば、マッチング率は確実に改善できます。この記事では20代向けに、よくある原因と今すぐできる改善策を解説します。</p>
+
+        <!-- セクション1：マッチングしない主な原因 -->
+        <section class="content-section">
+          <h2>マッチングしない主な原因4つ</h2>
+
+          <h3>1. プロフィール写真が印象を下げている</h3>
+          <p>マッチングアプリで最初に判断されるのは写真です。暗い場所で撮った写真、加工しすぎた写真、サングラスや帽子で顔が隠れている写真は、相手に不信感を与えやすいです。</p>
+          <p>メイン写真は「清潔感のある正面顔」「明るい場所で自然な笑顔」が基本です。スマートフォンでも十分ですが、照明と背景には気を配りましょう。</p>
+
+          <h3>2. プロフィール文が短すぎる・テンプレ的すぎる</h3>
+          <p>「趣味は映画と旅行です。よろしくお願いします。」だけでは、相手はどんな人かわからず、メッセージを送るきっかけもありません。プロフィール文は200〜400文字を目安に、趣味の具体的なエピソードや、どんな関係を目指しているかを書くと印象が変わります。</p>
+
+          <h3>3. いいねを送る相手の選び方が偏っている</h3>
+          <p>人気ユーザーにのみいいねを集中させていると、マッチング率は下がります。自分の「いいね返し率」と「マッチング率」のバランスを意識して、少し幅広く送るようにしましょう。相手の条件を絞りすぎることも機会損失につながります。</p>
+
+          <h3>4. 使っているアプリが自分に合っていない</h3>
+          <p>アプリによってユーザー層・目的・料金体系が大きく異なります。たとえば婚活目的なのに恋活メインのアプリを使っていると、出会いの方向性がずれてしまいます。自分の目的に合ったアプリを選ぶことが重要です。</p>
+        </section>
+
+        <!-- セクション2：写真・プロフィール改善策 -->
+        <section class="content-section">
+          <h2>写真とプロフィールを改善するポイント</h2>
+
+          <h3>写真の改善ポイント</h3>
+          <ul>
+            <li>メイン写真は明るい場所で正面から撮影した自然な笑顔</li>
+            <li>サブ写真は趣味・日常がわかるものを2〜3枚追加する</li>
+            <li>加工は軽めに。盛りすぎると会ったときのギャップが生まれる</li>
+            <li>全身写真を1枚入れると好印象になりやすい</li>
+          </ul>
+
+          <h3>プロフィール文の改善ポイント</h3>
+          <ul>
+            <li>趣味は「映画が好き」ではなく「ジブリ作品が好きで特にナウシカが好きです」と具体的に</li>
+            <li>どんな相手と出会いたいかを自然な言葉で添える</li>
+            <li>ネガティブな言葉（「コミュ障です」など）は避ける</li>
+            <li>句読点を使い、読みやすい文章にする</li>
+          </ul>
+
+          <h3>いいねの送り方を見直す</h3>
+          <p>人気ユーザーだけでなく、自分と趣味・価値観が近そうな相手にも積極的にいいねを送りましょう。プロフィール文を読んでいいねを送ると、マッチング後のメッセージも自然につながります。</p>
+        </section>
+
+        <!-- セクション3：おすすめアプリ -->
+        <section class="content-section">
+          <h2>マッチング率を上げやすいおすすめアプリ</h2>
+
+          <div class="app-comparison">
+            <table>
+              <thead>
+                <tr>
+                  <th>アプリ名</th>
+                  <th>特徴</th>
+                  <th>向いている人</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>concoi（こんこい）</strong></td>
+                  <td>信頼度11年No.1・人柄重視の文化</td>
+                  <td>誠実な出会いを求めている人</td>
+                </tr>
+                <tr>
+                  <td><strong>マリッシュ</strong></td>
+                  <td>恋活・婚活・再婚活に対応・幅広い層</td>
+                  <td>職業より人柄で評価されたい人</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>concoi（こんこい）</h3>
+          <p>お客様信頼度11年連続No.1の実績を持つマッチングサービス。人柄重視の文化があり、プロフィールをしっかり書けばマッチングにつながりやすい環境です。無料登録から始められます。</p>
+          <p><a href="https://h.accesstrade.net/sp/cc?rk=0100pvup00oqhy" rel="nofollow" target="_blank">concoi（こんこい）の公式サイトを見る</a></p>
+          <img src="https://h.accesstrade.net/sp/rr?rk=0100pvup00oqhy" width="1" height="1" border="0" alt="">
+
+          <h3>マリッシュ</h3>
+          <p>恋活・婚活・再婚活まで幅広く対応。肩書きや職業より人柄・価値観を大切にする文化があり、マッチングのハードルが比較的低い環境です。</p>
+          <p><a href="https://px.a8.net/svt/ejp?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" rel="nofollow" target="_blank">マリッシュの公式サイトを見る</a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" alt=""></p>
+        </section>
+
+        <!-- セクション4：今すぐできること -->
+        <section class="content-section">
+          <h2>今日から実践できる改善ステップ</h2>
+          <ul>
+            <li>プロフィール写真を1枚、明るい場所で撮り直す</li>
+            <li>自己紹介文を200文字以上に書き直す（趣味の具体的なエピソードを加える）</li>
+            <li>いいねを送る基準を少し広げてみる</li>
+            <li>自分の目的（恋活/婚活）に合ったアプリに切り替える</li>
+          </ul>
+
+          <!-- challenge-tensyokuへのクロスリンク -->
+          <section class="cta">
+            <p>仕事の安定が出会いの自信につながることもあります。転職を考えているなら、姉妹サイト「チャレンジ転職」も参考にしてみてください。</p>
+            <p><a href="https://challenge-tensyoku.com/" target="_blank" rel="noopener">チャレンジ転職 ― フリーターから正社員を目指す転職情報サイト</a></p>
+          </section>
+        </section>
+
+        <!-- まとめセクション -->
+        <section class="summary">
+          <h2>まとめ</h2>
+          <ul>
+            <li>マッチングしない原因は写真・プロフィール文・いいねの送り方・アプリ選びの4つが多い</li>
+            <li>写真は清潔感のある正面顔、プロフィールは具体的なエピソードを入れる</li>
+            <li>いいねは幅広く送り、自分の目的に合ったアプリを選ぶ</li>
+            <li>concoiやマリッシュは人柄重視の文化でマッチングにつながりやすい</li>
+            <li>小さな改善の積み重ねがマッチング率アップにつながる</li>
+          </ul>
+          <p>まずは写真とプロフィール文の見直しから始めてみましょう。小さな一歩が出会いのきっかけになります。</p>
+        </section>
+
+        <!-- 関連記事 -->
+        <section class="related-articles">
+          <h2>関連記事</h2>
+          <ul>
+            <li><a href="message-tsuzukanai.html">マッチングアプリでメッセージが続かない原因と対処法</a></li>
+            <li><a href="matching-profile-kakikata.html">マッチングアプリのプロフィール書き方【例文あり】20代・フリーター向け完全ガイド</a></li>
+            <li><a href="matching-app-dame-pattern.html">マッチングアプリで結果が出ない人がやりがちなNG行動5選</a></li>
+          </ul>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-site-name">恋はじめ</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 恋はじめ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
