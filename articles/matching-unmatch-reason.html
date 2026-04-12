@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://koi-hajime.com/articles/matching-unmatch-reason.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マッチングアプリでアンマッチされる理由と対策｜見直すべきポイントまとめ｜恋はじめ</title>
+  <meta name="description" content="マッチングアプリで突然アンマッチされる主な理由と対策を解説。メッセージの問題・プロフィールの改善点・タイプ別の対処法をまとめました。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="恋はじめ">
+  <meta property="og:title" content="マッチングアプリでアンマッチされる理由と対策｜恋はじめ">
+  <meta property="og:description" content="マッチングアプリで突然アンマッチされる主な理由と対策を解説。メッセージの問題・プロフィールの改善点・タイプ別の対処法をまとめました。">
+  <meta property="og:url" content="https://koi-hajime.com/articles/matching-unmatch-reason.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-container { max-width: 800px; margin: 0 auto; padding: 32px 16px 64px; }
+    .breadcrumb { font-size: 12px; color: var(--color-text-light); margin-bottom: 24px; }
+    .breadcrumb a { color: var(--color-text-light); }
+    .breadcrumb a:hover { color: var(--color-main); }
+    .breadcrumb span { margin: 0 6px; }
+    .article-header { margin-bottom: 32px; }
+    .article-category { display: inline-block; background-color: var(--color-sub); color: var(--color-main); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .article-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--color-text); line-height: 1.5; letter-spacing: 0.03em; }
+    .intro { background-color: var(--color-sub); border-radius: var(--radius-md); padding: 24px 20px; margin-bottom: 40px; }
+    .intro h1 { display: none; }
+    .intro ul { list-style: disc; padding-left: 20px; margin-bottom: 16px; }
+    .intro ul li { font-size: 14px; line-height: 1.9; color: var(--color-text); margin-bottom: 4px; }
+    .intro > p { font-size: 15px; line-height: 1.9; margin-bottom: 12px; }
+    .content-section { margin-bottom: 48px; }
+    .content-section h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--color-text); border-left: 4px solid var(--color-main); padding-left: 12px; line-height: 1.5; margin-bottom: 16px; }
+    .content-section h3 { font-size: 16px; font-weight: 700; color: var(--color-text); margin-top: 24px; margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px dashed var(--color-border); }
+    .content-section p { font-size: 15px; line-height: 1.9; margin-bottom: 16px; }
+    .content-section ul { list-style: none; padding: 0; margin-bottom: 20px; }
+    .content-section ul li { font-size: 15px; line-height: 1.8; padding: 10px 12px 10px 36px; position: relative; border-bottom: 1px solid var(--color-border); }
+    .content-section ul li:first-child { border-top: 1px solid var(--color-border); }
+    .content-section ul li::before { content: '✓'; position: absolute; left: 12px; color: var(--color-main); font-weight: 700; }
+    .content-section blockquote { background-color: var(--color-sub); border-left: 4px solid var(--color-accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; margin: 16px 0 20px; }
+    .content-section blockquote p { font-size: 14px; line-height: 1.9; color: #555; margin-bottom: 0; }
+    .outro { background-color: var(--color-sub); border-radius: var(--radius-md); padding: 24px 20px; margin-top: 48px; }
+    .outro h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--color-text); border-left: 4px solid var(--color-accent); padding-left: 12px; line-height: 1.5; margin-bottom: 16px; }
+    .outro ul { list-style: none; padding: 0; margin-bottom: 20px; }
+    .outro ul li { font-size: 15px; line-height: 1.8; padding: 10px 12px 10px 36px; position: relative; border-bottom: 1px solid #f3d0d0; }
+    .outro ul li:first-child { border-top: 1px solid #f3d0d0; }
+    .outro ul li::before { content: '✓'; position: absolute; left: 12px; color: var(--color-main); font-weight: 700; }
+    .outro p { font-size: 15px; line-height: 1.9; margin-bottom: 12px; }
+    .cta { background: linear-gradient(135deg, #ffeaea 0%, #ffd6e7 50%, #ffe0f0 100%); border-radius: var(--radius-md); padding: 16px 20px; text-align: center; margin: 16px 0 24px; }
+    .cta p { font-size: 15px; margin: 0; }
+    .cta p a { display: inline-block; background-color: var(--color-main); color: var(--color-white) !important; font-size: 15px; font-weight: 700; padding: 12px 28px; border-radius: var(--radius-lg); letter-spacing: 0.04em; box-shadow: 0 4px 16px rgba(248,113,113,0.35); transition: transform 0.2s ease, box-shadow 0.2s ease; text-decoration: none; }
+    .cta p a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(248,113,113,0.45); opacity: 1; }
+    @media (min-width: 768px) { .article-container { padding: 40px 32px 80px; } .article-title { font-size: 30px; } .content-section h2 { font-size: 22px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-name"><a href="../index.html">恋はじめ</a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-container">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">トップ</a>
+        <span>›</span>
+        <span>マッチングアプリでアンマッチされる理由と対策</span>
+      </nav>
+
+      <header class="article-header">
+        <span class="article-category">使い方・コツ</span>
+        <h1 class="article-title">マッチングアプリでアンマッチされる理由と対策｜見直すべきポイントまとめ</h1>
+      </header>
+
+      <article>
+
+        <section class="intro">
+          <p>「せっかくマッチングしたのに急にアンマッチされた」「マッチングしてもすぐ消えてしまう」というお悩みをよく聞きます。</p>
+          <p>アンマッチは必ずしもあなたが悪いわけではありませんが、改善できる点が隠れているケースも多いです。この記事で原因を整理して対策を立てましょう。</p>
+          <blockquote>
+            <p><strong>この記事でわかること</strong></p>
+            <ul>
+              <li>アンマッチされるよくある理由（5つ）</li>
+              <li>プロフィール・メッセージでの改善ポイント</li>
+              <li>アンマッチされた後の気持ちの切り替え方</li>
+            </ul>
+          </blockquote>
+        </section>
+
+        <section class="content-section">
+          <h2>アンマッチされるよくある理由5つ</h2>
+          <p>アンマッチは「こちらに問題がある場合」と「相手側の都合」の2パターンあります。改善できるのは前者だけです。</p>
+
+          <h3>① 最初のメッセージが印象に残らなかった</h3>
+          <p>「よろしくお願いします」だけのメッセージや、テンプレートっぽい内容だと、相手は「この人は本当に私のプロフィールを読んでいるのかな」と感じてしまいます。最初のメッセージでプロフィールへの言及がないと、会話が始まる前にアンマッチされることがあります。</p>
+
+          <h3>② メッセージのペースが合わなかった</h3>
+          <p>返信のペースが極端に遅かったり、逆に夜中に何通もメッセージを送ったりすると、相手が距離を置くことがあります。相手のペースに合わせた返信が基本です。</p>
+
+          <h3>③ プロフィール写真が良くなかった</h3>
+          <p>マッチングした後に改めてプロフィールを見直し、写真や自己紹介の印象が「思っていたのと違う」と感じてアンマッチするケースもあります。写真は清潔感のある自然な1枚を選びましょう。</p>
+
+          <h3>④ 外見・職業・年齢が条件に合わなかった</h3>
+          <p>相手が後から詳しく確認して、自分の条件と合わないと判断した場合もあります。これはコントロールできませんが、プロフィールを充実させることで「内面の魅力」を伝えることが対策になります。</p>
+
+          <h3>⑤ 相手がアプリをやめた・別の人と付き合った</h3>
+          <p>あなたが原因でなく、相手が恋人を作ったり退会したりしてアンマッチになるケースも多いです。アンマッチのすべてを自分のせいにしないことが大切です。</p>
+        </section>
+
+        <section class="content-section">
+          <h2>アンマッチを減らすためのプロフィール改善ポイント</h2>
+          <p>プロフィールを見直すだけで、マッチング後のアンマッチ率を下げることができます。</p>
+          <ul>
+            <li>写真は1枚目が笑顔の清潔感ある写真にする</li>
+            <li>自己紹介文は「趣味・価値観・どんな人と出会いたいか」を書く</li>
+            <li>ネガティブな表現（「自信がない」「ぶっちゃけ…」）を避ける</li>
+            <li>収入・職業欄はできる限り正確に記入する</li>
+          </ul>
+          <p>プロフィールは「会う前の印象」のすべてを決める重要な要素です。定期的に見直す習慣をつけましょう。</p>
+        </section>
+
+        <section class="content-section">
+          <h2>アンマッチされた後の気持ちの切り替え方</h2>
+          <p>アンマッチは誰でも経験することです。落ち込みすぎず、次に活かす視点を持ちましょう。</p>
+          <p>「アンマッチされた＝縁がなかった」と割り切ることが一番の対処法です。マッチングアプリは出会いの数を増やすことで確率を上げるゲームなので、一人にこだわりすぎないことが大切です。</p>
+          <p>仕事の転職活動でも「何社落ちても次に活かす」という姿勢が大切なように、<a href="https://challenge-tensyoku.com/" rel="noopener" target="_blank">チャレンジ転職</a>でも伝えているスタンスが、恋活にも通じます。</p>
+          <section class="cta"><p><a href="https://h.accesstrade.net/sp/cc?rk=0100pvup00oqhy" rel="nofollow" target="_blank">▶ concoi（こんこい）の公式サイトを見る</a></p></section>
+          <section class="cta"><p><a href="https://px.a8.net/svt/ejp?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" rel="nofollow" target="_blank">▶ マリッシュの公式サイトを見る</a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" alt=""></p></section>
+        </section>
+
+        <section class="outro">
+          <h2>まとめ</h2>
+          <ul>
+            <li>アンマッチの原因はメッセージ・写真・条件不一致・相手の都合の4つ</li>
+            <li>プロフィール写真と自己紹介文の見直しが最優先</li>
+            <li>アンマッチのすべてを自分のせいにしない</li>
+            <li>気持ちを切り替えて次の出会いへ進むことが大切</li>
+          </ul>
+          <p>アンマッチを恐れず、改善しながら前に進むことがマッチングアプリ攻略の鍵です。</p>
+        </section>
+
+        <section class="related-articles">
+          <h2>関連記事</h2>
+          <ul>
+            <li><a href="matching-first-message.html">【例文あり】マッチングアプリの最初のメッセージはこれで決まり</a></li>
+            <li><a href="matching-app-photo-tips.html">マッチングアプリのプロフィール写真の撮り方・選び方</a></li>
+            <li><a href="matching-app-jiko-shoukai.html">【コピペOK例文付き】マッチングアプリの自己紹介文の書き方</a></li>
+            <li><a href="matching-app-success-rate.html">マッチングアプリで本当に出会える？成功率と現実</a></li>
+          </ul>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-site-name">恋はじめ</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 恋はじめ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

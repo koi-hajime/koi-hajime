@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="canonical" href="https://koi-hajime.com/articles/matching-app-return-message.html">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>マッチングアプリのメッセージ返信のコツ｜既読無視・返信来ないときの対処法｜恋はじめ</title>
+  <meta name="description" content="マッチングアプリでメッセージの返信が来ないときの原因と対処法を解説。既読無視・返信が止まるパターン別の対応策と、会話を続けるコツをまとめました。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="恋はじめ">
+  <meta property="og:title" content="マッチングアプリのメッセージ返信のコツ｜既読無視・返信来ないときの対処法｜恋はじめ">
+  <meta property="og:description" content="マッチングアプリでメッセージの返信が来ないときの原因と対処法を解説。既読無視・返信が止まるパターン別の対応策と、会話を続けるコツをまとめました。">
+  <meta property="og:url" content="https://koi-hajime.com/articles/matching-app-return-message.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .article-container { max-width: 800px; margin: 0 auto; padding: 32px 16px 64px; }
+    .breadcrumb { font-size: 12px; color: var(--color-text-light); margin-bottom: 24px; }
+    .breadcrumb a { color: var(--color-text-light); }
+    .breadcrumb a:hover { color: var(--color-main); }
+    .breadcrumb span { margin: 0 6px; }
+    .article-header { margin-bottom: 32px; }
+    .article-category { display: inline-block; background-color: var(--color-sub); color: var(--color-main); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.05em; margin-bottom: 12px; }
+    .article-title { font-family: var(--font-display); font-size: 24px; font-weight: 700; color: var(--color-text); line-height: 1.5; letter-spacing: 0.03em; }
+    .intro { background-color: var(--color-sub); border-radius: var(--radius-md); padding: 24px 20px; margin-bottom: 40px; }
+    .intro h1 { display: none; }
+    .intro ul { list-style: disc; padding-left: 20px; margin-bottom: 16px; }
+    .intro ul li { font-size: 14px; line-height: 1.9; color: var(--color-text); margin-bottom: 4px; }
+    .intro > p { font-size: 15px; line-height: 1.9; margin-bottom: 12px; }
+    .content-section { margin-bottom: 48px; }
+    .content-section h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--color-text); border-left: 4px solid var(--color-main); padding-left: 12px; line-height: 1.5; margin-bottom: 16px; }
+    .content-section h3 { font-size: 16px; font-weight: 700; color: var(--color-text); margin-top: 24px; margin-bottom: 12px; padding-bottom: 4px; border-bottom: 1px dashed var(--color-border); }
+    .content-section p { font-size: 15px; line-height: 1.9; margin-bottom: 16px; }
+    .content-section ul { list-style: none; padding: 0; margin-bottom: 20px; }
+    .content-section ul li { font-size: 15px; line-height: 1.8; padding: 10px 12px 10px 36px; position: relative; border-bottom: 1px solid var(--color-border); }
+    .content-section ul li:first-child { border-top: 1px solid var(--color-border); }
+    .content-section ul li::before { content: '✓'; position: absolute; left: 12px; color: var(--color-main); font-weight: 700; }
+    .content-section blockquote { background-color: var(--color-sub); border-left: 4px solid var(--color-accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 16px 20px; margin: 16px 0 20px; }
+    .content-section blockquote p { font-size: 14px; line-height: 1.9; color: #555; margin-bottom: 0; }
+    .outro { background-color: var(--color-sub); border-radius: var(--radius-md); padding: 24px 20px; margin-top: 48px; }
+    .outro h2 { font-family: var(--font-display); font-size: 20px; font-weight: 700; color: var(--color-text); border-left: 4px solid var(--color-accent); padding-left: 12px; line-height: 1.5; margin-bottom: 16px; }
+    .outro ul { list-style: none; padding: 0; margin-bottom: 20px; }
+    .outro ul li { font-size: 15px; line-height: 1.8; padding: 10px 12px 10px 36px; position: relative; border-bottom: 1px solid #f3d0d0; }
+    .outro ul li:first-child { border-top: 1px solid #f3d0d0; }
+    .outro ul li::before { content: '✓'; position: absolute; left: 12px; color: var(--color-main); font-weight: 700; }
+    .outro p { font-size: 15px; line-height: 1.9; margin-bottom: 12px; }
+    .cta { background: linear-gradient(135deg, #ffeaea 0%, #ffd6e7 50%, #ffe0f0 100%); border-radius: var(--radius-md); padding: 16px 20px; text-align: center; margin: 16px 0 24px; }
+    .cta p { font-size: 15px; margin: 0; }
+    .cta p a { display: inline-block; background-color: var(--color-main); color: var(--color-white) !important; font-size: 15px; font-weight: 700; padding: 12px 28px; border-radius: var(--radius-lg); letter-spacing: 0.04em; box-shadow: 0 4px 16px rgba(248,113,113,0.35); transition: transform 0.2s ease, box-shadow 0.2s ease; text-decoration: none; }
+    .cta p a:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(248,113,113,0.45); opacity: 1; }
+    @media (min-width: 768px) { .article-container { padding: 40px 32px 80px; } .article-title { font-size: 30px; } .content-section h2 { font-size: 22px; } }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="site-name"><a href="../index.html">恋はじめ</a></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="article-container">
+
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">トップ</a>
+        <span>›</span>
+        <span>マッチングアプリのメッセージ返信のコツ</span>
+      </nav>
+
+      <header class="article-header">
+        <span class="article-category">使い方・コツ</span>
+        <h1 class="article-title">マッチングアプリのメッセージ返信のコツ｜既読無視・返信来ないときの対処法</h1>
+      </header>
+
+      <article>
+
+        <section class="intro">
+          <p>「返信が来なくなった」「既読になっているのに返ってこない」という悩みは、マッチングアプリでよく聞きます。</p>
+          <p>返信が来ない原因はいくつかのパターンがあり、それぞれ対応策が異なります。この記事で整理しましょう。</p>
+          <blockquote>
+            <p><strong>この記事でわかること</strong></p>
+            <ul>
+              <li>返信が来ない・止まる主な原因</li>
+              <li>既読無視されたときの対処法</li>
+              <li>会話を自然に続けるためのコツ</li>
+              <li>追いメッセージの正しい使い方</li>
+            </ul>
+          </blockquote>
+        </section>
+
+        <section class="content-section">
+          <h2>返信が来ない・止まる主な原因</h2>
+          <p>返信が止まる原因はいくつかに分類できます。</p>
+
+          <h3>① メッセージに返しにくい内容が含まれている</h3>
+          <p>質問を5つ以上並べたり、重い話題を振ったりすると、相手が「どう返せばいいかわからない」と感じて返信が止まることがあります。メッセージは「返しやすさ」を意識して書くことが大切です。</p>
+
+          <h3>② 返信のペースが合っていない</h3>
+          <p>相手が1時間以上かけてゆっくり返しているのに、こちらが5分以内に連続で返信していると、ペースのギャップにプレッシャーを感じることがあります。相手のペースに合わせることが基本です。</p>
+
+          <h3>③ 相手が別の人と付き合った・忙しくなった</h3>
+          <p>こちらの問題でなく、相手の都合で返信が止まるケースも多いです。仕事が忙しくなった、他の人との話が進んだなどの理由が考えられます。</p>
+
+          <h3>④ 話題が尽きてきた</h3>
+          <p>メッセージのやりとりが長期化すると、話題が尽きてきて自然とフェードアウトすることがあります。早めにデートに繋げることがフェードアウト防止策です。</p>
+        </section>
+
+        <section class="content-section">
+          <h2>既読無視されたときの正しい対処法</h2>
+          <p>既読無視は「終了」ではありません。正しい対処で関係が復活することも十分あります。</p>
+
+          <h3>2〜3日は待つ</h3>
+          <p>既読になっても、すぐに追いメッセージを送るのは逆効果です。まず2〜3日は待ちましょう。相手が忙しいだけの場合もあります。</p>
+
+          <h3>3〜4日後に自然な話題で再アプローチ</h3>
+          <blockquote>
+            <p>「ところで〇〇の件、どうなりましたか？」「最近〇〇ってやりましたか？」</p>
+          </blockquote>
+          <p>「返信くれましたか」ではなく、全く別の話題で自然に話しかけ直すのがポイントです。</p>
+
+          <h3>それでも返ってこない場合は諦める</h3>
+          <p>1週間以上返信がなければ、縁がなかったと割り切ることも大切です。同じ人に固執するより、新しい出会いを探す方が良い結果につながります。</p>
+        </section>
+
+        <section class="content-section">
+          <h2>会話を自然に続けるためのコツ</h2>
+          <p>返信が来なくなるのを防ぐためには、会話の設計が重要です。</p>
+
+          <h3>質問で終わる習慣をつける</h3>
+          <p>メッセージの最後に質問を1つ入れることで、相手が返信しやすくなります。ただし質問は1つに絞ること。複数あると答えるのが大変になります。</p>
+
+          <h3>共感→自分の話→質問の順番で</h3>
+          <blockquote>
+            <p>「それいいですね（共感）！私も最近〇〇に行ったんですけど（自分の話）、〇〇さんはどんなお店が好きですか？（質問）」</p>
+          </blockquote>
+          <p>このパターンで返信すると、会話が弾みやすくなります。</p>
+        </section>
+
+        <section class="content-section">
+          <h2>追いメッセージの正しい使い方</h2>
+          <p>追いメッセージは「使い方次第」です。正しく使えば関係が復活することもありますが、使いすぎると逆効果です。</p>
+          <ul>
+            <li>1通だけ送る（2通以上は圧迫感）</li>
+            <li>「返してください」という内容は避ける</li>
+            <li>全く別の話題で自然に送る</li>
+            <li>2〜3日以上経ってから送る</li>
+          </ul>
+          <p>焦らず、気持ちに余裕を持ってアプリを使うことが長続きのコツです。<a href="https://challenge-tensyoku.com/" rel="noopener" target="_blank">チャレンジ転職</a>でも伝えているように、粘り強さと余裕のバランスが大切です。</p>
+          <section class="cta"><p><a href="https://h.accesstrade.net/sp/cc?rk=0100pvup00oqhy" rel="nofollow" target="_blank">▶ concoi（こんこい）の公式サイトを見る</a></p></section>
+          <section class="cta"><p><a href="https://px.a8.net/svt/ejp?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" rel="nofollow" target="_blank">▶ マリッシュの公式サイトを見る</a><img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4B1G9K+FAQ1NU+3N2M+67JUA" alt=""></p></section>
+        </section>
+
+        <section class="outro">
+          <h2>まとめ</h2>
+          <ul>
+            <li>返信が止まる主な原因：質問が多すぎ・ペース不一致・相手の都合</li>
+            <li>既読無視は2〜3日待ってから自然な話題で再アプローチ</li>
+            <li>メッセージは「質問1つで終わる」のが基本</li>
+            <li>1週間以上返信なしは割り切って次へ進む</li>
+          </ul>
+          <p>返信が来ないときは焦らず、余裕を持って対応することが一番です。</p>
+        </section>
+
+        <section class="related-articles">
+          <h2>関連記事</h2>
+          <ul>
+            <li><a href="matching-first-message.html">【例文あり】マッチングアプリの最初のメッセージはこれで決まり</a></li>
+            <li><a href="matching-line-exchange.html">マッチングアプリからLINEを交換するタイミング</a></li>
+            <li><a href="matching-unmatch-reason.html">マッチングアプリでアンマッチされる理由と対策</a></li>
+            <li><a href="message-tsuzukanai.html">マッチングアプリでメッセージが続かない原因と対策</a></li>
+          </ul>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-site-name">恋はじめ</div>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="../privacy.html">プライバシーポリシー</a></li>
+          <li><a href="../index.html#articles">記事一覧</a></li>
+          <li><a href="../index.html#recommend">おすすめアプリ</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 恋はじめ All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
