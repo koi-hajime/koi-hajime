@@ -55,7 +55,7 @@
     @media (min-width: 768px) { .article-container { padding: 40px 32px 80px; } .article-title { font-size: 30px; } .content-section h2 { font-size: 22px; } }
   </style>
 </head>
-<body>
+<body class="has-sp-cta">
 
   <header class="site-header">
     <div class="header-inner">
@@ -66,8 +66,13 @@
           <li><a href="../index.html#recommend">おすすめアプリ</a></li>
         </ul>
       </nav>
-    </div>
+    
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button></div>
   </header>
+<div id="sp-nav" class="sp-nav">
+<a href="../index.html#articles">記事一覧</a>
+<a href="../index.html#recommend">おすすめアプリ</a>
+</div>
 
   <main>
     <div class="article-container">
@@ -168,6 +173,8 @@
       <div class="footer-site-name">恋はじめ</div>
       <nav class="footer-nav">
         <ul>
+          <li><a href="https://x.com/ymt_life_" target="_blank" rel="noopener">X（@ymt_life_）</a></li>
+          <li><a href="../about.html">このサイトについて</a></li>
           <li><a href="../privacy.html">プライバシーポリシー</a></li>
           <li><a href="../index.html#articles">記事一覧</a></li>
           <li><a href="../index.html#recommend">おすすめアプリ</a></li>
@@ -177,5 +184,25 @@
     </div>
   </footer>
 
+
+<!-- SP FIXED BOTTOM CTA -->
+<div class="sp-cta-bar"><span class="sp-cta-bar-text">気になるアプリ、まず<strong style="color:#fff">無料登録</strong>だけ</span><a class="sp-cta-bar-btn" href="../index.html#recommend">アプリを見る →</a></div>
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var nav = document.getElementById('sp-nav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(){
+    btn.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      btn.classList.remove('open');
+      nav.classList.remove('open');
+    });
+  });
+})();
+</script>
 </body>
 </html>

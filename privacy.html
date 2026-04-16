@@ -81,8 +81,13 @@
           <li><a href="index.html#recommend">おすすめアプリ</a></li>
         </ul>
       </nav>
-    </div>
+    
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button></div>
   </header>
+<div id="sp-nav" class="sp-nav">
+<a href="index.html#articles">記事一覧</a>
+<a href="index.html#recommend">おすすめアプリ</a>
+</div>
 
   <main>
     <div class="page-container">
@@ -134,6 +139,8 @@
       <div class="footer-site-name">恋はじめ</div>
       <nav class="footer-nav">
         <ul>
+          <li><a href="https://x.com/ymt_life_" target="_blank" rel="noopener">X（@ymt_life_）</a></li>
+          <li><a href="about.html">このサイトについて</a></li>
           <li><a href="privacy.html">プライバシーポリシー</a></li>
           <li><a href="index.html#articles">記事一覧</a></li>
           <li><a href="index.html#recommend">おすすめアプリ</a></li>
@@ -143,5 +150,22 @@
     </div>
   </footer>
 
+<script>
+(function(){
+  var btn = document.getElementById('hamburger');
+  var nav = document.getElementById('sp-nav');
+  if (!btn || !nav) return;
+  btn.addEventListener('click', function(){
+    btn.classList.toggle('open');
+    nav.classList.toggle('open');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      btn.classList.remove('open');
+      nav.classList.remove('open');
+    });
+  });
+})();
+</script>
 </body>
 </html>

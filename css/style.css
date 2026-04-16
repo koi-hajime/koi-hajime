@@ -642,3 +642,103 @@ main {
   color: #F87171;
   text-decoration: underline;
 }
+
+
+/* ==========================================================================
+   ハンバーガーメニュー / SP固定CTAバー / ランクr4-r9
+   ========================================================================== */
+
+/* ハンバーガーボタン */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  flex-direction: column;
+  gap: 5px;
+  flex-shrink: 0;
+}
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* SPドロップダウンナビ */
+.sp-nav {
+  display: none;
+  position: fixed;
+  top: var(--header-height);
+  left: 0; right: 0;
+  background: var(--color-white);
+  border-bottom: 2px solid var(--color-border);
+  padding: 8px 20px 16px;
+  flex-direction: column;
+  z-index: 99;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+}
+.sp-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--color-border);
+  display: block;
+  opacity: 1;
+  transition: color 0.2s;
+}
+.sp-nav a:last-child { border-bottom: none; }
+.sp-nav a:hover { color: var(--color-main); opacity: 1; }
+.sp-nav.open { display: flex; }
+
+/* SP固定CTAバー */
+.sp-cta-bar {
+  display: none;
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  background: var(--color-main);
+  color: #fff;
+  padding: 10px 16px;
+  z-index: 200;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.2);
+}
+.sp-cta-bar-text { font-size: 0.8rem; line-height: 1.4; color: #fff; }
+.sp-cta-bar-btn {
+  background: #fff;
+  color: var(--color-main);
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  opacity: 1;
+}
+.sp-cta-bar-btn:hover { opacity: 0.9; }
+
+/* ランクr4〜r9 */
+.app-card-rank.r4,
+.app-card-rank.r5,
+.app-card-rank.r6,
+.app-card-rank.r7,
+.app-card-rank.r8,
+.app-card-rank.r9 { color: #7c3aed; }
+
+@media (max-width: 767px) {
+  .hamburger { display: flex; }
+  .main-nav { display: none; }
+  .sp-cta-bar { display: flex; }
+  body.has-sp-cta { padding-bottom: 58px; }
+}
